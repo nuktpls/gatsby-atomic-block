@@ -2,11 +2,11 @@
 	"folders": [
 		{
 			"name": "Elements Structures",
-			"path": "./src/nu_modules/layout/components"
+			"path": "./src/nu_modules/atomic-block/components"
 		},
 		{
 			"name": "Elements Logics",
-			"path": "./src/nu_modules/layout/containers"
+			"path": "./src/nu_modules/atomic-block/containers"
 		},
 		{
 			"name": "Elements Styles",
@@ -14,11 +14,11 @@
 		},
 		{
 			"name": "Configs",
-			"path": "./src/nu_modules/layout/configs"
+			"path": "./src/nu_modules/atomic-block/configs"
 		},
 		{
 			"name": "Persistents Vars",
-			"path": "./src/nu_modules/layout/services"
+			"path": "./src/nu_modules/atomic-block/services"
 		},
 		{
 			"name": "Tools",

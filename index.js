@@ -3,7 +3,6 @@ import AgentResolver from './src/nu_modules/atomic-block/containers'
 
 const AtomicBlock = ({
 	type,
-	blockOptions,
 	children,
 	link,
 	linkText,
@@ -51,7 +50,6 @@ const AtomicBlock = ({
 	return (
 		<AgentResolver
 			type={type}
-			blockOptions={blockOptions} // Remover e colocar no context
 			children={children}
 			contents={content}
 		/>
