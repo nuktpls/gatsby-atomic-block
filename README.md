@@ -10,15 +10,11 @@
 
 #### LAYOUT BUILDER _by [Edu4Dev](https://edu4.dev)_
 
----
-
 **Engine Agent:** Gatsby - Javascript Framework
 
 **Engine SubAgent:** Gatsby Plugin
 
 **Gatsby Plugin Name:** Gatsby Atomic Block
-
----
 
 **Author:** Edu4Dev - Milton Bolonha
 
@@ -35,8 +31,6 @@
 **Version:** 0.2.0
 
 **Year:** 2021
-
----
 
 Invoke Atomic Block in your custom component:
 
@@ -57,11 +51,15 @@ Invoke Atomic Block in your custom component:
 
 	// Emmet::block::AtomicBlock[numColumns=3]
 	// Emmet::pseudo_output::Layout*3>AtomicBlock*3
-	// Example: <Layout numColumns={3} ><AtomicBlock numColumns={3} /></Layout>
+	// Example: <Layout numColumns={3} >
+	// 						<AtomicBlock numColumns={3} />
+	// 					</Layout>
 	// numColumns={`your var goes here`}
 
 	// Internal and External http.links
-	// Output::a[href="https://external"] or <Link to="/internal-page-link" />
+	// Output::a[href="https://external"]
+	// or
+	// Output::<Link to="/internal-page-link" />
 	// Automatic switch not coded
 	// link={`your var goes here`}
 	// linkText={`your var goes here`}
@@ -76,8 +74,10 @@ Invoke Atomic Block in your custom component:
 	// Heading importance 6 = <h5>
 	// Heading importance 5 = <h6>
 	// headingImportance={10}
-	// Notice, use <Layout type="MAIN" /> wrappering your heading schema
-	// <Layout type="MAIN" /> not available yet on gatsby-layout-builder
+	// Notice, use <Layout type="MAIN" /> to
+	// wrapper your heading schema
+	// <Layout type="MAIN" /> not available yet
+	// on gatsby-layout-builder v.0.1.7
 
 	// Echo/Print Paragraph <p> sanitized
 	// paragraph={`your var goes here`}
@@ -113,6 +113,8 @@ Invoke Atomic Block in your custom component:
 	// {children}
 </AtomicBlock>
 // Below you can view each type of output components
+// subAgent's are elements.children's
+// comes from inside <AtomicBlock>{children}</AtomicBlock>
 // type BLOCK
 <ABblockcontainer
 	subAgent={subAgent}
@@ -120,7 +122,7 @@ Invoke Atomic Block in your custom component:
 	contents={contents}
 	configs={configs}
 />
-// type MODAL
+// type MODAL should (yes) I remove modal from AB?
 <ABmodalcontainer
 	data={data}
 	subAgent={subAgent}
