@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import grabHorizontalScroll from '../../../tools/grabHorizontalScroll'
+// import grabHorizontalScroll from '../../../tools/grabHorizontalScroll'
 import ABwrapprecarousel from '../components/ABwrappercarousel'
 import ABwrappercolumns from '../components/ABwrappercolumns'
 
@@ -34,15 +34,15 @@ const ABmainwrappercontainer = ({
 	} = contents
 	const basis = 100 / numColumns
 
-	function GridContentSlider(ref) {
-		const value = ref.current ? ref.current.className : null
-		useEffect(() => {
-			grabHorizontalScroll(value || ref)
-		})
-	}
+	// function GridContentSlider(ref) {
+	// 	// const value = ref.current ? ref.current.className : null
+	// 	useEffect(() => {
+	// 		// grabHorizontalScroll(value || ref)
+	// 	})
+	// }
 
 	if (gridType === 'carousel') {
-		GridContentSlider(theRef)
+		// GridContentSlider(theRef)
 		return (
 			<ABwrapprecarousel
 				classWrapper={classWrapper}
