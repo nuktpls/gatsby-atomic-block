@@ -51,9 +51,10 @@ Invoke Atomic Block in your custom component:
 
 	// Emmet::block::AtomicBlock[numColumns=3]
 	// Emmet::pseudo_output::Layout*3>AtomicBlock*3
-	// Example: <Layout numColumns={3} >
-	// 						<AtomicBlock numColumns={3} />
-	// 					</Layout>
+	// Example: 
+	//  <Layout numColumns={3} >
+	//   <AtomicBlock numColumns={3} />
+	// </Layout>
 	// numColumns={`your var goes here`}
 
 	// Internal and External http.links
@@ -98,20 +99,29 @@ Invoke Atomic Block in your custom component:
 	// form={`your var goes here`}
 
 	// Default: false == Default: columns
-	// isCarousel={`your var goes here`}
+	// isCarousel={false}
 
 	// not available yet
-	// fontColor={`your var goes here`}
-	// fontSize={`your var goes here`}
+	// fontColor={`#000`}
+	// fontSize={14}
 
 	// Display canvas block infos for each ABlock
-	// canvas.atomic-block.infos{position;styles;childs;plain_texts}  ABlock
-	// debug={`your var goes here`}
+	// canvas.atomic-block.infos{
+  //   position; styles; childs; plain_texts;
+	// } 
+	// debug={false}
 >
 	// Your paramaters will be outputed in here
 	// Your content goes here
 	// {children}
 </AtomicBlock>
+```
+
+Inside the Atomic Block we do have the main elements to be used on the construction of your custom block.
+
+You should use ```<AtomicBlock />``` as many as you can, combine it with the Gatsby Layout Builder plugin.
+
+```js
 // Below you can view each type of output components
 // subAgent's are elements.children's
 // comes from inside <AtomicBlock>{children}</AtomicBlock>
